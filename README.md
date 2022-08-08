@@ -2,7 +2,7 @@
 65010039 - นายกลวัชร อินทร์แป้น <br> 
 [Programming Fundamental Websites](https://sites.google.com/kmitl.ac.th/programming-fundamental/home?pli=1&authuser=1)
 
-### Curriculum
+### Contents
 1. Course Outline | [Course Outline](./sheet/week1.pdf)<br>
 2. Pseudo Code | [Pseudo Code](./sheet/week2.pdf)<br>
 3. Variables | [Variables](./sheet/week3.pdf)<br>
