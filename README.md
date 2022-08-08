@@ -3,11 +3,11 @@
 [Programming Fundamental Websites](https://sites.google.com/kmitl.ac.th/programming-fundamental/home?pli=1&authuser=1)
 
 ### Contents
-1. Course Outline | [Course Outline](./sheet/week1.pdf)<br>
-2. Pseudo Code | [Pseudo Code](./sheet/week2.pdf)<br>
-3. Variables | [Variables](./sheet/week3.pdf)<br>
-4. Testing & Debugging | [Testing Debugging](./sheet/week4.pdf)<br>
-5. Array, Function | [Array, Function](./sheet/week5.pdf)<br>
-6. Pointer | [Pointer](./sheet/week6.pdf)<br>
-7. Variables, Function | [Variables, Function](./sheet/week7.pdf)<br>
-8. Struct, File | [struct, File](./sheet/week8.pdf)<br>
+1. Course Outline | [Course Outline](./Slides/1.%20Course%20Outline.pdf.pdf)<br>
+2. Pseudo Code | [Pseudo Code](./Slides/2.%20Pseudo%20Code.pdf.pdf)<br>
+3. Variables | [Variables](./Slides/3.%20Variables.pdf.pdf)<br>
+4. Testing & Debugging | [Testing Debugging](./Slides/4.%20Testing%20%26%20Debugging.pdf.pdf)<br>
+5. Array, Function | [Array, Function](./Slides/5.%20Array%20Function.pdf.pdf)<br>
+6. Pointer | [Pointer](./Slides/6.%20Pointer.pdf.pdf)<br>
+7. Variables, Function | [Variables, Function](./Slides/7.%20PassFunction.pdf.pdf)<br>
+8. Struct, File | [Struct, File](./Slides/week8.pdf)<br>
