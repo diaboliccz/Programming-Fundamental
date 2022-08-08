@@ -4,7 +4,7 @@
 
 ### Curriculum
 Week | Description | sheet
-:----: | ---- | :----:
+//:----: | ---- | :----:
 1 | Course Outline | [link](./sheet/week1.pdf)
 2 | Pseudo Code | [link](./sheet/week2.pdf)
 3 | Variables | [link](./sheet/week3.pdf)
