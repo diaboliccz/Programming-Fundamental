@@ -2,8 +2,8 @@
 65010039 - นายกลวัชร อินทร์แป้น
 <table border="1" bordercolor="#000000">
   <tr>
-    <td rowspan="2">ระดับชั้น</td>
-    <td colspan="2">จำนวนนักเรียน</td>
+    <td rowspan="5">ระดับชั้น</td>
+    <td colspan="5">จำนวนนักเรียน</td>
   </tr>
   <tr>
     <td>ชาย</td>
