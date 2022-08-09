@@ -1,18 +1,25 @@
 #include <stdio.h>
-
-int gcd_1(int a, int b);
-int gcd_2(int a, int b);
+/*
+หา ห.ร.ม. 65010039
+1.รับค่า a,b, ตั้งตัวแปร c ไว้รับเศษ
+2.วนซ้ำถ้า b != 0
+	2.1 c=a%b
+	2.2 a=b
+	2.3 b=c
+3. ถ้า b=0 แล้วให้ส่งค่า a กลับมา a จะเป็น ห.ร.ม.
+*/
+int gcd(int a, int b);
 
 int main()
 {
     int a,b,c;
     printf("Enter first number : ");scanf("%d",&a);
     printf("Enter second number : ");scanf("%d",&b);
-    printf("Greatest common divider = %d and %d",gcd_1(a,b),gcd_2(a,b));
+    printf("Greatest common divider = %d",gcd(a,b));
     return 0;
 }
 
-int gcd_2(int a, int b){
+int gcd(int a, int b){
     int c;
     while(b!=0){
         c=a%b;
@@ -38,3 +45,4 @@ int gcd_1(int a, int b){
         }
     }
 }
+
