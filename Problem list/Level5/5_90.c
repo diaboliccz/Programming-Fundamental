@@ -11,7 +11,8 @@ double sqrt(double num){
     return x_1;
 }
 
+
 int main(){
-    printf("%.9f",sqrt(111000));
+    printf("%.9f",sqrt(144));
     return 0;
 }

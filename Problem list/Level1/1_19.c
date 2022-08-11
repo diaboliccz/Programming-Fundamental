@@ -15,6 +15,6 @@ duration time  = 60 seconds
 whirling about 594 rounds
 */
 int main(){
-    int w
+    
     return 0;
 }
