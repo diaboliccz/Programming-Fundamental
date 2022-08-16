@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-double sqrt(double num){
+double num;
+double sqrt(){
     double x_0 = num/2;
     double x_1;
     double precision = .00000001;
@@ -10,9 +10,8 @@ double sqrt(double num){
     }
     return x_1;
 }
-
-
 int main(){
-    printf("%.9f",sqrt(144));
+    scanf("%f", &num);
+    printf("%.4f", sqrt(num));
     return 0;
 }

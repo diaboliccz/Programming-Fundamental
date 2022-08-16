@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(){
     int num,result,sum=0;
     int result_1,sum_1;
@@ -8,7 +7,6 @@ int main(){
         result=num%10;
         num/=10;
         sum+=result;
-        
     }
     while(sum>0){
         result_1=sum%10;
