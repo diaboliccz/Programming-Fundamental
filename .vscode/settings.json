@@ -27,5 +27,9 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "files.associations": {
+    "*.ejs": "html",
+    "string.h": "c"
+  }
 }
