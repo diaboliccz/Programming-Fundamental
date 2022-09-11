@@ -3,16 +3,16 @@
 #include <conio.h>
 
 #define WIDTH 50
-#define HEIGHT 50
+#define HEIGHT 20
 
 void draw_ship(int x, int y) {
-    printf("<-O-> ");
     COORD c = { x,y };
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
+    printf(" <-O-> ");
+    
 }
 
 void draw_rect() {
-    //int width = 10,height = 10;
     for (int i = 0; i < HEIGHT; i++) {
         for (int j = 0; j < WIDTH; j++) {
             if (i == 0 || i == HEIGHT - 1 || j == 0 || j == WIDTH - 1) {
@@ -26,8 +26,11 @@ void draw_rect() {
     }
 }
 
-void erase_ship() {
-
+void erase_ship(int x, int y) {
+    COORD c = {x,y};
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
+    printf("      ");
+    
 }
 
 int main() {
@@ -38,32 +41,37 @@ int main() {
     do {
         if (_kbhit()) {
             ch = _getch();
-            if (x < WIDTH-6) {
-                if (ch == 'd') { draw_ship(x+=1, y); }
+            //X
+            if (x < WIDTH-8) {
+                if (ch == 'd') {   
+                    draw_ship(++x, y);
+                    
+                }
             }
-            else {
-                if (ch == 'd') { draw_ship(x, y); }
-            }
-            if (y < HEIGHT - 2) {
-                if (ch == 's') { draw_ship(x, y += 1); }
-            }
-            else {
-                if (ch == 's') { draw_ship(x, y); }
-            }
+
             if (x > 1) {
-                if (ch == 'a') { draw_ship(x -= 1, y); }
+                if (ch == 'a') { 
+                    draw_ship(--x, y);
+                    
+                }
             }
-            else {
-                if (ch == 'a') { draw_ship(x, y); }
+
+            //y
+            if (y < HEIGHT - 2) {
+                if (ch == 's') { 
+                    erase_ship(x, y);
+                    draw_ship(x, ++y);
+                    
+                }
             }
+
             if (y > 1) {
-                if (ch == 'w') { draw_ship(x, y -= 1); }
+                if (ch == 'w') { 
+                    erase_ship(x, y);
+                    draw_ship(x, --y);
+                    
+                }
             }
-            else {
-                if (ch == 'w') { draw_ship(x, y); }
-            }
-            
-            
             fflush(stdin);
         }
     } while (ch != 'x');

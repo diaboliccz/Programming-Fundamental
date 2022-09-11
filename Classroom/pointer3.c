@@ -3,10 +3,15 @@
 #include <stdio.h>
 #include <string.h>
 int main(){
-    char str[50];
-    scanf("%s",&str);
-    for(int i=0;i<strlen(str);i++){
-        printf("%c",str[strlen(str)-i-1]);
+    char str[100];
+    scanf("%s",str);
+    char *p=str;
+    int count = 1;
+    int num=len(str);
+    while(*p!='\0'){
+        for(int i=0;i<num;i++){
+            if(str[i]==)
+        }
     }
     return 0;
 }
