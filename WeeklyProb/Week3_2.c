@@ -28,8 +28,9 @@ double sqrt(double num){
     return x1;
 }
 int main(){
-    double num = 256;
+    int num;
+    scanf("%d", &num);
     double result = sqrt(num);
-    printf("square root of %.2f is %.5f",num,result);
+    printf("square root of %d is %.5f",num,result);
     return 0;
 }

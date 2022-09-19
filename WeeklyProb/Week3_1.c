@@ -1,9 +1,15 @@
-#include <stdio.h>
-#include <math.h>
-int main(){
-    float num;
-    scanf("%f",&num);
-    float result=sqrt(num);
-    printf("Square root of %.0f is %.5f",num,result);
-    return 0;
+#include<stdio.h>
+
+void main()
+{
+    int num;
+    float temp, sqrt;
+    scanf("%d", &num);
+    sqrt = num / 2;
+    temp = 0;
+    while(sqrt != temp){
+        temp = sqrt;
+        sqrt = ( num/temp + temp) / 2;
+    }
+    printf("square root of %d is %f", num, sqrt);
 }
