@@ -86,14 +86,14 @@ void main() {
 						Sleep(10);
 					}
 				}
-				else {
+				/*else {
 					bullet = 0;
 					for (int j = 0; j < 6; j++) {
 						bullet_check[j] = FALSE;
 					}
 					spacebar_check = TRUE;
 					Sleep(10);
-				}
+				}*/
 			}
 			fflush(stdin);
 		}
