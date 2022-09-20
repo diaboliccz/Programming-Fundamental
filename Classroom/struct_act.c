@@ -1,52 +1,22 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
-/*
-Programming Fundamental
-32
-ให้นักศึกษาทดลอง เขียนโปรแกรมเก็บข้อมูล
-ชื่อผู้เล่น , level และ คะแนนของผู้เล่นจำนวน 5 คน
-เก็บไว้ใน Binary File
-Hint : ชื่อผู้เล่นไม่ควรมีเว้นวรรค
-*/
 
-/*
-int main(){
-    FILE *fptr;
-    struct student {
-        char name[20];
+int main() {
+    FILE* fp;
+    fp = fopen("mytestfile.txt","w");
+    struct player {
+        char name[50];
         int level;
         int score;
-    }Player[5];
-    fptr = fopen("mytestfile.txt", "w");
-    for(int i=1;i<=5;i++){
-        printf("Player %d : ",i);
-        scanf("%s",Player[i].name);
-        printf("Level : "); scanf("%d",&Player[i].level);
-        printf("Score : "); scanf("%d",&Player[i].score);
-        printf("\n");
-        fwrite(&Player, sizeof(struct student),5,fptr);
+    }p[5];
+    for (int i = 1; i <= 5; i++) {
+        scanf("%s %d %d", p[i].name, &p[i].level, &p[i].score);
     }
-    
-    fclose(fptr);
-    return 0;
-}*/
-
-int main(){
-    FILE *fptr;
-    struct player{
-        char name[20];
-        int level;
-        int score;
-    }p[2];
-    fptr = fopen("mytestfile.txt", "w");
-    for(int i=1;i<=2;i++){
-        printf("Player %d, Name : ",i); scanf("%s",p[i].name);
-        printf("level : "); scanf("%d",&p[i].level);
-        printf("score : "); scanf("%d",&p[i].score);
-        fwrite(&p, sizeof(struct player),2,fptr);
-        fclose(fptr);
-        printf("\n");
+    for (int i = 1; i <= 5; i++) {
+        fprintf(fp, "Name : %s, Level : %d, Score : %d\n", p[i].name, p[i].level, p[i].score);
+        
     }
+    fclose(fp);
     return 0;
 }
