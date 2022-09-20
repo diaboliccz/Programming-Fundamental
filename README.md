@@ -14,11 +14,11 @@
 
 
 ### Labs
-1. Lab1 | [Lab1](./Lab/Lab1/Lab1.pdf)<br>
-2. Lab2 | [Lab2](./Lab/Lab2/Lab2.pdf)<br>
-3. Lab3 | [Lab3](./Lab/Lab3/Lab3.pdf)<br>
-4. Lab4 | [Lab4](./Lab/Lab4/Lab4.pdf)<br>
-5. Lab5 | [Lab5](./Lab/Lab5/Lab5.pdf)<br>
-6. Lab6 | [Lab6](./Lab/Lab6/Lab6.pdf)<br>
-7. Lab7 | [Lab7](./Lab/Lab7/Lab7.pdf)<br>
-8. Lab8 | [Lab8](./Lab/Lab8/Lab8.pdf)<br>
+1. [Lab1](./Lab/Lab1/Lab1.pdf)<br>
+2. [Lab2](./Lab/Lab2/Lab2.pdf)<br>
+3. [Lab3](./Lab/Lab3/Lab3.pdf)<br>
+4. [Lab4](./Lab/Lab4/Lab4.pdf)<br>
+5. [Lab5](./Lab/Lab5/Lab5.pdf)<br>
+6. [Lab6](./Lab/Lab6/Lab6.pdf)<br>
+7. [Lab7](./Lab/Lab7/Lab7.pdf)<br>
+8. [Lab8](./Lab/Lab8/Lab8.pdf)<br>
