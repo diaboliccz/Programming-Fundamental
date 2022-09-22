@@ -11,7 +11,6 @@ int main(){
     }
     for(int i=count-1;i>=0;i--){
         float k=result[i]*pow(10,i);
-        //printf("%.0f\n",k);
         sum+=k;
     }
     printf("%d\n",sum);

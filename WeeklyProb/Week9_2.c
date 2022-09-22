@@ -3,16 +3,17 @@
 #include <stdio.h>
 
 int main(){
-    int num[10];
+    int num[10],count=10;
     for(int i = 0;i<10;i++){
         scanf("%d",&num[i]);
     }
     int *p=num;
-    while(*p!=num[9]){
+    while(count!=0){
         if((*(p-1)%2==1)&&(*(p+1)%2==1)){
             printf("%d ",*p);
         }
         p++;
+        count--;
     }
     return 0;
 }
