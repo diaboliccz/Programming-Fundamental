@@ -1,3 +1,4 @@
+// จงเขียนฟังก์ชั่น factorial (Level 3)
 #include <stdio.h>
 int factorial(int num){
     if(num==0){

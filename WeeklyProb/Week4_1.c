@@ -1,3 +1,6 @@
+// จงเขียนโปรแกรมเพื่อคำนวณหาตัวเลขฐานสองของอินพุทที่รับเข้ามา (Level 2)
+
+
 #include <stdio.h>
 int main(){
     int num,result[100],count=0;

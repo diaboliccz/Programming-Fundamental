@@ -1,3 +1,5 @@
+// จงเขียนฟังก์ชัน sqrt โดยไม่ใช้ไลบรารี math.h (Level 5)
+
 #include <stdio.h>
 double max(double num1,double num2){
     if(num1>num2){
@@ -28,9 +30,9 @@ double sqrt(double num){
     return x1;
 }
 int main(){
-    int num;
-    scanf("%d", &num);
+    float num;
+    scanf("%f", &num);
     double result = sqrt(num);
-    printf("square root of %d is %.5f",num,result);
+    printf("square root of %f is %.5f",num,result);
     return 0;
 }

@@ -1,15 +1,21 @@
+// จงเขียนฟังก์ชัน sqrt โดยไม่ใช้ไลบรารี math.h (Level 5)
 #include<stdio.h>
 
-void main()
-{
-    int num;
-    float temp, sqrt;
-    scanf("%d", &num);
-    sqrt = num / 2;
+double sqrt(double num){
+    float temp, result;
+    result = num / 2;
     temp = 0;
-    while(sqrt != temp){
-        temp = sqrt;
-        sqrt = ( num/temp + temp) / 2;
+    while(result != temp){
+        temp = result;
+        result = ( num/temp + temp) / 2;
     }
-    printf("square root of %d is %f", num, sqrt);
+    return result;
+}
+
+int main()
+{
+    float num;
+    scanf("%f", &num);
+    printf("Square root of %f is %f",num,sqrt(num));
+    return 0;
 }

@@ -1,12 +1,17 @@
+//  จงเขียนฟังก์ชั่น factorial (Level 3)
 #include <stdio.h>
 
-int main(){
-    int num;
+int factorial(int num){
     int result = 1;
-    scanf("%d",&num);
     for(int i=1;i<=num;i++){
         result*=i;
     }
-    printf("Factorial of %d is %d",num,result);
+    return result;
+}
+
+int main(){
+    int num;
+    scanf("%d",&num);
+    printf("%d! = %d",num,factorial(num));
     return 0;
 }

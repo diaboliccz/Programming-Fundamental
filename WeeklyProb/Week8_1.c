@@ -10,7 +10,7 @@ int main(){
         count++;
         p++;
     }
-    while(*p!=str[0]){
+    while(count!=0){
         for(int i=0;i<count;i++){
             printf("%c",str[i]);
         }
